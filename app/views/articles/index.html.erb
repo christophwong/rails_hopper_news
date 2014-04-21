@@ -1,0 +1,10 @@
+<h1> Hacker New School News</h1>
+<%= link_to "Login", '/login' %>
+
+
+
+<ol>
+  <% @articles.each do |article| %>
+    <li><%= article.title %> (<%= article.url %>)</li>
+  <%end%>
+</ol>
